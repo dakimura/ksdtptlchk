@@ -76,9 +76,9 @@ def main():
                     day = t[0]
                     if len(t) == 3:
                         if "AM" in t[1]:
-                            if t[1] != 'AM ×':
+                            if t[1] != 'AM ×' and t[1] != 'AM 抽':
                                 results.append("{}月{}日の午前に空きがあります".format(month, day))
-                            if t[2] != 'PM ×':
+                            if t[2] != 'PM ×' and t[2] != 'PM 抽':
                                 results.append("{}月{}日の午後に空きがあります".format(month, day))
 
                             print("{}月{}日".format(month, day))
